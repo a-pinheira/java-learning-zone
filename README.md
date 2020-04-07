@@ -1,8 +1,7 @@
-:woman_teacher:
-# Java-learning-zone
-Este repositório é um protótipo inicial, onde continua a passar constatemente por revisões, mudanças e features.
+#Java-learning-zone
+:octocat:  Este repositório é um protótipo inicial, onde continua a passar constatemente por revisões, mudanças e features.
 
-# #  Aprendizagem e treinamento de ferramentas, técnicas  e frameworks em Java Web (JEE) de A a Z 
+##Aprendizagem e treinamento de ferramentas, técnicas  e frameworks em Java Web (JEE) de A a Z 
 :computer: :new:
 - 1 Projeto de banco simples no padrão MVC: 
 - 2 Projeto de leitura e manipulção de Arquivos (ler 2 arquivos e gera outros a partir de um determinado resultado)
@@ -15,11 +14,11 @@ Este repositório é um protótipo inicial, onde continua a passar constatemente
 - 10 Projeto Spring Completo com Angular
 - 11 ...
 - ...
-- Full Ninja Stack :medal_military:
+- full stack ninja :medal_military:
 
 ---------------------
-:octocat: 
-by *Mony Machado* 
+
+:woman_teacher: by *Mony Machado* 
 
 Todo o nosso conhecimento se inicia com sentimentos. É i sso que nos diferencia das máquinas. Leonardo da Vinci
 
