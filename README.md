@@ -5,7 +5,7 @@
 :computer: :new:
 - 1 Projeto de banco simples no padrão MVC: 
 - 2 Projeto de leitura e manipulção de Arquivos (ler 2 arquivos e gera outros a partir de um determinado resultado)
-- 3 Projeto de conexão deBanco de Dados JDBC usando o H2
+- 3 Projeto de CRUD com conexão de Banco de Dados JDBC usando o H2
 - 5 Projeto de Editora,  usando servlet e DAO Generics 
 - 6 Projeto Hibernate: Teste Review 1.0
 - 7 Projeto Hibernate de uma Loja: Aplicando conceitos relacional Review 2.0
