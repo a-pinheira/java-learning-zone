@@ -18,5 +18,6 @@ function initMap() {
         //título do mapa
         title: "First Marker! - Primeira construção!"
     });
+    //Usando marcadores para mais de uma janela de informações
   
 }
