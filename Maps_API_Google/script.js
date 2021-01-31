@@ -19,6 +19,7 @@ function initMap() {
         //título do mapa
         title: "First Marker! - Primeira construção!"
     });
+<<<<<<< HEAD
     // Para criar uma Janela de informações, basta criar uma variável e adcionar conteúdo a ela, como:
     // uma String ou um conjunto pré-definito de elementos
     var infowind = new google.maps.InfoWind ({
@@ -29,5 +30,8 @@ function initMap() {
     marker.addListener('click', function(){
         infowind.open(map, marker);
     });
+=======
+    //Usando marcadores para mais de uma janela de informações
+>>>>>>> b1ac4dd1f83215fb32914062a256d2d024de2133
   
 }
