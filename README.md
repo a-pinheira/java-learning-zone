@@ -1,12 +1,11 @@
-<center> :woman_teacher: by *Mony Machado* 
-
-Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia das máquinas. Leonardo da Vinci
-
-:brazil: </center> 
----------------------
-
 # Java-learning-zone
 :octocat:  Projeto completo focado em tratamentos de erro
+
+Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia das máquinas. Leonardo da Vinci </br>
+:woman_teacher: by *Mony Machado*
+
+<center> :brazil: </center> 
+
 
 ##  Configuração do Projeto
 - IDE: InterliJ
@@ -47,7 +46,11 @@ Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia 
 - 32 - Refatoração dos testes para executar com Token
 - 33 - Documentation with Swagger2 and SpringFox
 
->> full stack ninja :medal_military:
+---------------------
+
+> full stack ninja :medal_military:
+
+"fim por fim feito por mim"
 
 
 
