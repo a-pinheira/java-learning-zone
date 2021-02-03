@@ -2,9 +2,7 @@
 :octocat:  Projeto completo focado em tratamentos de erro
 
 Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia das máquinas. Leonardo da Vinci </br>
-:woman_teacher: by *Mony Machado*
-
-<center> :brazil: </center> 
+:woman_teacher: by *Mony Machado* :brazil: 
 
 
 ##  Configuração do Projeto
@@ -12,7 +10,7 @@ Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia 
 - Java 8, Maven, Spring 
 :computer: :new:
 ## Spring Boot Essentials - OFF Topics
-01: Setup do projeto
+- 01: Setup do projeto
 - 02 - @Component, @Autowired e @SpringBootApplication
 - 03 - Configurando hot swap
 - 04 - Setup do projeto com Spring Initializr
@@ -48,9 +46,9 @@ Todo o nosso conhecimento se inicia com sentimentos. É isso que nos diferencia 
 
 ---------------------
 
-> full stack ninja :medal_military:
+> "fim por fim feito por mim" :medal_military:
 
-"fim por fim feito por mim"
+
 
 
 
