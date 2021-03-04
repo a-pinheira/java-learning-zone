@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\ASUS\Documents\java-learning-zone\java-puro-alr\.metadata\.plugins\org.eclipse.jdt.core
+661260841.index
