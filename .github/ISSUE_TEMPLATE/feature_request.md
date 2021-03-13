@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: news features - reviews
+labels: documentation, enhancement, good first issue
 assignees: ''
 
 ---
