@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for this project
 title: news features - reviews
 labels: documentation, enhancement, good first issue
-assignees: ''
+assignees: monymachado
 
 ---
 
