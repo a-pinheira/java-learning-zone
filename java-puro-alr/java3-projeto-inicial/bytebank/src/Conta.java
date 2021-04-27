@@ -22,7 +22,7 @@ public class Conta {
 	public boolean saca(double valor) {
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
-			return true;
+			return true;  
 		} else {
 			return false;
 		}
@@ -39,7 +39,7 @@ public class Conta {
 
 	public double getSaldo() {
 		return this.saldo;
-	}
+	} 
 
 	public int getNumero() {
 		return this.numero;
