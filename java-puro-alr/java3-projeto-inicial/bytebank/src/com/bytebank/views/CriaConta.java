@@ -1,3 +1,7 @@
+package com.bytebank.views;
+
+import com.bytebank.model.Conta;
+
 public class CriaConta {
 
     public static void main(String[] args) {

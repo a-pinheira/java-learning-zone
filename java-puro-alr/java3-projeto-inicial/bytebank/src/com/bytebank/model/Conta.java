@@ -1,3 +1,4 @@
+package com.bytebank.model;
 public class Conta {
 
 	private double saldo;

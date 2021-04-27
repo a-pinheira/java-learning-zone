@@ -1,3 +1,4 @@
+package com.bytebank.model;
 public class Cliente {
 
     private String nome;

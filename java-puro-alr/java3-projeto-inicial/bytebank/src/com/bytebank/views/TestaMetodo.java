@@ -1,3 +1,7 @@
+package com.bytebank.views;
+
+import com.bytebank.model.Conta;
+
 public class TestaMetodo {
 	public static void main(String[] args) {
 		Conta contaDoPaulo = new Conta(6646,969060);

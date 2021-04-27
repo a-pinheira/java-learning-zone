@@ -1,3 +1,8 @@
+package com.bytebank.views;
+
+import com.bytebank.model.Cliente;
+import com.bytebank.model.Conta;
+
 public class TestaBanco {
 	public static void main(String[] args) {
 		Cliente paulo = new Cliente();
