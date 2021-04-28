@@ -5,6 +5,18 @@ public class FuncionarioHerancaTeste {
 	private String cpf;
 	private double salario;
 	private int tipo = 0; // 0 - funcionario comum, 1 - Gerente, 2 - Diretor
+	private int senha;
+	
+	//este medoto e uma caracteristica e funcionalidade é especifica de alguns tipos de funcionarios
+	//herança resolve esta solução
+	public boolean auth(int senha) {
+		if (this.senha == senha) {
+			return true;			
+		} else {
+			return false;
+			//System.out.println("senh errada, tente novamente");
+		}
+	}
 
 	// Metodo de adcional de 10% no salario do funcionario
 	public double getBonificacao() {
@@ -16,11 +28,12 @@ public class FuncionarioHerancaTeste {
 			return this.salario + 1000.0;
 		}
 	}
+
 	// Construtor
-	/*
-	 * public FuncionarioHerancaTeste() { super(); // TODO Auto-generated
-	 * constructor stub }
-	 */
+	public FuncionarioHerancaTeste() { 
+		super(); 
+	// TODO Auto-generated constructor stub 
+	}
 
 	// Get's & Set's
 
