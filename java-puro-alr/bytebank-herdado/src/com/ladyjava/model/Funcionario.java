@@ -11,8 +11,20 @@ public class Funcionario {
 
 	}
 
-	// Constru tor
+	// Construtor
+	public Funcionario(String nome, String cpf, double salario) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.salario = salario;
+	}
 	
+	
+
+	public Funcionario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	// Get's & Set's
 	public String getNome() {
