@@ -12,10 +12,7 @@ public class Funcionario {
 	}
 
 	// Constru tor
-	 /*public Funcionario(String nome, String cpf, double salario) {
-		//super();
 	
-	}*/
 
 	// Get's & Set's
 	public String getNome() {
