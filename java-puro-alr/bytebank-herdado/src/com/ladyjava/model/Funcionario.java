@@ -4,10 +4,18 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
+	private int tipo = 0;
 
 	// Metodo de adcional de 10% no salario do funcionario
-	public double getBonificacai() {
-		return this.salario * 0.1;
+	// Metodo de adcional de 10% no salario do funcionario
+	public double getBonificacao() {
+		if (this.tipo == 0) {
+			return this.salario * 0.1;
+		} else if (this.tipo == 1) {
+			return this.salario * 0.3;
+		} else {
+			return this.salario + 1000;
+		}
 
 	}
 
@@ -18,8 +26,6 @@ public class Funcionario {
 		this.cpf = cpf;
 		this.salario = salario;
 	}
-	
-	
 
 	public Funcionario() {
 		super();
@@ -49,6 +55,14 @@ public class Funcionario {
 
 	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
 }
