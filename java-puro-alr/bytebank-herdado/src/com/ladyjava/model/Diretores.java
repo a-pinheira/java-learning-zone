@@ -1,31 +1,29 @@
 package com.ladyjava.model;
 
 //herança: usando o método <extends> 
-public class Gerente extends Funcionario {
+public class Diretores extends Funcionario {
 
 	private int senha;
-
-	// Metodo Bonificacao para gerente
+	
+	//Metodo Bonificação
 	@Override
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
-		//	return super.getBonificacao();
-			return super.getBonificacao() + super.salario;
-		//return (this.salario * 0.1)+super.salario;
+		return super.salario + 1000;	
 	}
 
 	// Metodo Autenticação
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
 			return true;
-
+  
 		} else {
 			return false;
 		}
 	}
 
 	// Construtor
-	public Gerente() {
+	public Diretores() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

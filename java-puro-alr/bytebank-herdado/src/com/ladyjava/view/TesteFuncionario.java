@@ -11,8 +11,12 @@ public class TesteFuncionario {
 		func1.setCpf("22200112300");
 		func1.setSalario(2800.00);
 		
+		
+		System.out.println("Sua bonificação: " + func1.getCpf());
 		System.out.println("Nome da(o) funcionaa(o): " + func1.getNome());
+		System.out.println("Sua bonificação: " + func1.getSalario());
 		System.out.println("Sua bonificação: " + func1.getBonificacao());
+		
 		
 		//Segunda forma: deixando o usuário passar os dados (paramentros)
 		/*Funcionario func = new Funcionario();
