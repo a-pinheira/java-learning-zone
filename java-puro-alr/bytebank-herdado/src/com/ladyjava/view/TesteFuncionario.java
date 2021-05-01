@@ -17,6 +17,11 @@ public class TesteFuncionario {
 		System.out.println("Sua bonificação: " + func1.getSalario());
 		System.out.println("Sua bonificação: " + func1.getBonificacao());
 		
+		func1.setLogin("Mony");
+		func1.setSenha(1234);
+		boolean autentic = func1.autentica("Mony", 1234);
+		System.out.println("Sucess passw! " + autentic);
+
 		
 		//Segunda forma: deixando o usuário passar os dados (paramentros)
 		/*Funcionario func = new Funcionario();

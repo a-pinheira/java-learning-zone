@@ -1,25 +1,48 @@
 package com.ladyjava.model;
 
+import javax.swing.text.StyledEditorKit.BoldAction;
+
 public class Funcionario {
 	private String nome;
 	private String cpf;
 	// privite é só visívil dentro desta classe
-	// private double salario;
-	protected double salario;
+	private double salario;
+	// VISIBILIDADES: protected double salario;
 	private int tipo = 0;
-	
+	private String login;
+	private int senha;
 
 	// Metodo de adcional de 10% no salario do funcionario
 	public double getBonificacao() {
 //		if (this.tipo == 0) {
-			return this.salario * 0.1;
-		} 
-//		else if (this.tipo == 1) {
-//			return this.salario * 0.3;
-//		} else {
-//			return this.salario + 1000;
-//		}
-//		}
+		return this.salario * 0.1;
+	}
+
+	// else if (this.tipo == 1) {
+	// return this.salario * 0.3;
+	// } else {
+	// return this.salario + 1000;
+	// }
+	// }
+	// Metodo Autenticação
+
+	//	public boolean autentica(int senha) {
+	//		if (this.senha == senha) {
+	//			return true;
+	//
+	//		} else {
+	//			return false;
+	//		}
+	//	}
+
+	// novo método, recebendo dois params
+	public boolean autentica(String login, int senha) {
+		if (this.login == login && this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	// Construtor
 	public Funcionario(String nome, String cpf, double salario) {
@@ -67,4 +90,19 @@ public class Funcionario {
 		this.tipo = tipo;
 	}
 
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public int getSenha() {
+		return senha;
+	}
+
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
 }

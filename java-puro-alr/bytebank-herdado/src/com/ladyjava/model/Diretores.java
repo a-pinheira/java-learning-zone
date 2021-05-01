@@ -9,7 +9,8 @@ public class Diretores extends Funcionario {
 	@Override
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
-		return super.salario + 1000;	
+		//return super.salario + 1000;	
+		return super.getBonificacao() + super.getSalario();
 	}
 
 	// Metodo Autenticação

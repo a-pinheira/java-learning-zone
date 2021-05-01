@@ -1,6 +1,7 @@
 package com.ladyjava.view;
 
 import com.ladyjava.model.Funcionario;
+
 import com.ladyjava.model.Gerente;
 //Classe Método de Instancia
 public class TesteGerente {
@@ -14,7 +15,8 @@ public class TesteGerente {
 		g1.setCpf("23425345");
 		g1.setTipo(1);
 		g1.setSalario(5000);
-		
+
+			
 		System.out.println("Nome: " + g1.getNome());
 		System.out.println("CPF: " + g1.getCpf());
 		System.out.println("Salario: " + g1.getSalario());

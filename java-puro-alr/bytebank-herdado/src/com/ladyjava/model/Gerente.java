@@ -9,9 +9,11 @@ public class Gerente extends Funcionario {
 	@Override
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
-		//	return super.getBonificacao();
-			return super.getBonificacao() + super.salario;
-		//return (this.salario * 0.1)+super.salario;
+		// return super.getBonificacao();
+		// Para o atributo privado em funcionario
+		// return super.getBonificacao() + super.salario;
+		// return (this.salario * 0.1)+super.salario;
+		return super.getBonificacao() + super.getSalario();
 	}
 
 	// Metodo Autenticação
