@@ -10,7 +10,7 @@ public class Diretores extends Funcionario {
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
 		//return super.salario + 1000;	
-		return super.getBonificacao() + super.getSalario();
+		return super.getBonificacao() + super.getSalario() * 0.3;
 	}
 
 	// Metodo Autenticação
