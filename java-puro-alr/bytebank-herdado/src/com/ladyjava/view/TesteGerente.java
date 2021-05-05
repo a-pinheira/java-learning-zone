@@ -1,6 +1,6 @@
 package com.ladyjava.view;
 
-import com.ladyjava.model.Funcionario;
+//import com.ladyjava.model.Funcionario;
 
 import com.ladyjava.model.Gerente;
 //Classe Método de Instancia

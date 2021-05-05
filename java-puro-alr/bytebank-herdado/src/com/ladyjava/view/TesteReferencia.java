@@ -1,6 +1,7 @@
 package com.ladyjava.view;
 
 import com.ladyjava.controller.ControllerBonificacao;
+import com.ladyjava.model.Designer;
 import com.ladyjava.model.Funcionario;
 import com.ladyjava.model.Gerente;
 import com.ladyjava.model.VideoMaker;
@@ -65,8 +66,22 @@ public class TesteReferencia {
 		System.out.println(vm.getSalario());
 		System.out.println(controle.getSoma());
 		System.out.println(vm.getTipo());
+		
+		//Designer
+		Funcionario ds = new Designer();
+		ds.setCpf("654321");
+		ds.setNome("Designer Plus+"); 
+		ds.setSalario(1950);
+		ds.setTipo(4);
+		//registra funcionario através do método regista (ControllerBonificação.java)
+		controle.registra(ds);
+		System.out.println(ds.getNome());
+		System.out.println(ds.getCpf());
+		System.out.println(ds.getSalario());
+		System.out.println(controle.getSoma());
+		System.out.println(ds.getTipo());
+
+		//testar diretores
 	}
-	
-	//testar diretores
 
 }

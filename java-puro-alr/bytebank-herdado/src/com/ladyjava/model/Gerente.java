@@ -15,7 +15,8 @@ public class Gerente extends Funcionario {
 		return super.getBonificacao() + super.getSalario();
 	}
 
-	// Metodo Autenticação
+	// Metodo Autenticação precisa está descrito em cada tipo de funcionario
+	// pois cada um tem as permissões diferentes 
 	/*
 	 * public boolean autentica(int senha) { if ((this.login == login) &&
 	 * (this.senha == senha)) { return true;

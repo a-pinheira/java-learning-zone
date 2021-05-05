@@ -1,7 +1,5 @@
 package com.ladyjava.model;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 public class Funcionario {
 	private String nome;
 	private String cpf;
