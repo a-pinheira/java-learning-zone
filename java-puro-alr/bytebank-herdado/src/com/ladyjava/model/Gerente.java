@@ -3,8 +3,6 @@ package com.ladyjava.model;
 //herança: usando o método <extends> 
 public class Gerente extends Funcionario {
 
-	private int senha;
-
 	// Metodo Bonificacao para gerente
 	@Override
 	public double getBonificacao() {
@@ -13,18 +11,17 @@ public class Gerente extends Funcionario {
 		// Para o atributo privado em funcionario
 		// return super.getBonificacao() + super.salario;
 		// return (this.salario * 0.1)+super.salario;
+		System.out.println("Chamando o método de bonificação do GERENTE");
 		return super.getBonificacao() + super.getSalario();
 	}
 
 	// Metodo Autenticação
-	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-
-		} else {
-			return false;
-		}
-	}
+	/*
+	 * public boolean autentica(int senha) { if ((this.login == login) &&
+	 * (this.senha == senha)) { return true;
+	 * 
+	 * } else { return false; } }
+	 */
 
 	// Construtor
 	public Gerente() {
@@ -33,12 +30,14 @@ public class Gerente extends Funcionario {
 	}
 
 	// Get's & Set's
-	public int getSenha() {
-		return senha;
-	}
-
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
+	/*
+	 * public int getSenha() { return senha; }
+	 * 
+	 * public void setSenha(int senha) { this.senha = senha; }
+	 * 
+	 * public String getLogin() { return login; }
+	 * 
+	 * public void setLogin(String login) { this.login = login; }
+	 */
 
 }

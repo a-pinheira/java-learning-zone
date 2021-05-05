@@ -15,6 +15,8 @@ public class Funcionario {
 	// Metodo de adcional de 10% no salario do funcionario
 	public double getBonificacao() {
 //		if (this.tipo == 0) {
+		//outra forma de chamar o tipo de funcionario
+		System.out.println("Chamando o método de bonificação do " + this.getTipo());
 		return this.salario * 0.1;
 	}
 

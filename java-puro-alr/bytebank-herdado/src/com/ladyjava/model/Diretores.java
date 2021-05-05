@@ -10,6 +10,7 @@ public class Diretores extends Funcionario {
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
 		//return super.salario + 1000;	
+		System.out.println("Chamando o método de bonificação do DIRETORES");
 		return super.getBonificacao() + super.getSalario() * 0.3;
 	}
 

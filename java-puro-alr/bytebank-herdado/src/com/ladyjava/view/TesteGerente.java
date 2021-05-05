@@ -23,8 +23,9 @@ public class TesteGerente {
 		System.out.println("Bonificação: " + g1.getBonificacao());
 		System.out.println("Tipo Funcionario: " + g1.getTipo());
 		
-		g1.setSenha(1234);
-		boolean autenticou = g1.autentica(1234);
+		g1.setLogin("gerente");
+		g1.setSenha(1100);
+		boolean autenticou = g1.autentica("gerente", 1100);
 		System.out.println("Sucess! " + autenticou);
 
 		//Gerente g2 = new Gerente();
