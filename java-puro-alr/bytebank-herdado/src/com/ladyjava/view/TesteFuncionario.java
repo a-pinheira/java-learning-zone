@@ -1,15 +1,16 @@
 package com.ladyjava.view;
 
+import com.ladyjava.model.Diretores;
 import com.ladyjava.model.Funcionario;
 
 public class TesteFuncionario {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Primeira forma: passando cada paramentros
-		Funcionario func1 = new Funcionario();
+		Funcionario func1 = new Diretores();
 		func1.setNome("Simonetti");
 		func1.setCpf("22200112300");
-		func1.setSalario(2800.00);
+		func1.setSalario(7800.00);
 		
 		
 		System.out.println("Sua bonificação: " + func1.getCpf());

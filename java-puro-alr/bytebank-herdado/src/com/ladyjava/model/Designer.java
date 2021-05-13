@@ -6,7 +6,8 @@ public class Designer extends Funcionario {
 
 	public double getBonificacao() {
 		System.out.println("Chamando o método de bonificação do DESINER");
-		return super.getBonificacao() + 200;
+		//return super.getBonificacao() + 200;
+		return this.getSalario() + 200;
 	}
 
 	// Metodo Autenticação

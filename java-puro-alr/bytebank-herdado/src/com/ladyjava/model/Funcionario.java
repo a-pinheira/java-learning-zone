@@ -1,6 +1,7 @@
 package com.ladyjava.model;
 
-public class Funcionario {
+//Não pode mais instanciar/criar objetos desta classe, pq é abstrata - pode ser outros, menos funcionario
+public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	// privite é só visívil dentro desta classe
@@ -10,13 +11,13 @@ public class Funcionario {
 	private String login;
 	private int senha;
 
-	// Metodo de adcional de 10% no salario do funcionario
-	public double getBonificacao() {
-//		if (this.tipo == 0) {
-		//outra forma de chamar o tipo de funcionario
+	/* // Metodo de adcional de 10% no salario do funcionario
+	  public double getBonificacao() {
+		// if (this.tipo == 0) {
+		// outra forma de chamar o tipo de funcionario
 		System.out.println("Chamando o método de bonificação do " + this.getTipo());
 		return this.salario * 0.1;
-	}
+	} */
 
 	// else if (this.tipo == 1) {
 	// return this.salario * 0.3;
@@ -26,14 +27,18 @@ public class Funcionario {
 	// }
 	// Metodo Autenticação
 
-	//	public boolean autentica(int senha) {
-	//		if (this.senha == senha) {
-	//			return true;
+	// public boolean autentica(int senha) {
+	// if (this.senha == senha) {
+	// return true;
 	//
-	//		} else {
-	//			return false;
-	//		}
-	//	}
+	// } else {
+	// return false;
+	// }
+	// }
+	
+	//declara este método com essa assinatura - sem corpo/sem implementação, 
+	// pois os filhos irão implementar e desta forma obriga os filhos a terem este método
+	public abstract double getBonificacao();
 
 	// novo método, recebendo dois params
 	public boolean autentica(String login, int senha) {

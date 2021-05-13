@@ -4,7 +4,7 @@ package com.ladyjava.model;
 public class Gerente extends Funcionario {
 
 	// Metodo Bonificacao para gerente
-	@Override
+	// Usa-se o <@Override> e <Super>, só se o método tiver na clase genérica/mãe 
 	public double getBonificacao() {
 		// TODO Auto-generated method stub
 		// return super.getBonificacao();
@@ -12,7 +12,9 @@ public class Gerente extends Funcionario {
 		// return super.getBonificacao() + super.salario;
 		// return (this.salario * 0.1)+super.salario;
 		System.out.println("Chamando o método de bonificação do GERENTE");
-		return super.getBonificacao() + super.getSalario();
+		//salário simples
+		//return super.getSalario() + super.getSalario();
+		return this.getSalario();
 	}
 
 	// Metodo Autenticação precisa está descrito em cada tipo de funcionario

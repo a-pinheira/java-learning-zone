@@ -2,6 +2,7 @@ package com.ladyjava.view;
 
 import com.ladyjava.controller.ControllerBonificacao;
 import com.ladyjava.model.Designer;
+import com.ladyjava.model.Diretores;
 import com.ladyjava.model.Funcionario;
 import com.ladyjava.model.Gerente;
 import com.ladyjava.model.VideoMaker;
@@ -39,11 +40,11 @@ public class TesteReferencia {
 		
 		/* String nome =  m.out.println(nome);
 			System.out.println(sal);*/
-		Funcionario func = new Funcionario();
+		Funcionario func = new Diretores();
 		func.setCpf("123486");
-		func.setNome("Juju Funcionaria");
-		func.setSalario(2500);
-		func.setTipo(0);
+		func.setNome("Sisi Diretora");
+		func.setSalario(7500);
+		func.setTipo(2);
 		//registra funcionario através do método regista (ControllerBonificação.java)
 		controle.registra(func);
 		System.out.println(func.getNome());

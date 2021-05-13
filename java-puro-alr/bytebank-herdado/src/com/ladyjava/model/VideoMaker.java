@@ -6,7 +6,8 @@ public class VideoMaker extends Funcionario {
 
 	public double getBonificacao() {
 		System.out.println("Chamando o método de bonificação do VIDEO MAKER");
-		return super.getBonificacao() + 100;
+		//return super.getBonificacao() + 150;
+		return this.getSalario() + 150;
 
 	}
 
