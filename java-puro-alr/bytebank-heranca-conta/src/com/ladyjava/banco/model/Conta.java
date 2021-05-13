@@ -14,11 +14,11 @@ public class Conta {
 	//contrutor especifico
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("O total de contas sao " + Conta.total);
+		System.out.println("O total de contas sao \n" + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
-		this.saldo = 100;
-		System.out.println("Estou criando uma conta" + this.numero);
+		//this.saldo = 100;
+		System.out.println("Estou criando uma conta \n" + this.numero);
 	}
 
 	public void deposita(double valor) {
@@ -46,7 +46,7 @@ public class Conta {
 	public double getSaldo() {
 		return this.saldo;
 	} 
-
+ 
 	public int getNumero() {
 		return this.numero;
 	}
