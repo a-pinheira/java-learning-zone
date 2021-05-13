@@ -1,7 +1,8 @@
 package com.ladyjava.banco.model;
-public class Conta {
+//ngm pode instanciar um objeto desta classe -> <new>
+public abstract class Conta {
 
-	private double saldo;
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -21,9 +22,12 @@ public class Conta {
 		System.out.println("Estou criando uma conta \n" + this.numero);
 	}
 
-	public void deposita(double valor) {
-		this.saldo = this.saldo + valor;
-	}
+	/* public void deposita(double valor) {
+	*	this.saldo = this.saldo + valor;
+	* }
+	*/
+	//obriga as classes filhas implementarem
+	public abstract void deposita(double valor);
 
 	public boolean saca(double valor) {
 		if (this.saldo >= valor) {
