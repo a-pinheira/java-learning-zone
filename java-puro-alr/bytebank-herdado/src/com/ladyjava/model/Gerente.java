@@ -1,7 +1,10 @@
 package com.ladyjava.model;
 
+import com.ladyjava.controller.FuncionarioAutenticavel;
+
 //herança: usando o método <extends> 
-public class Gerente extends Funcionario {
+//Gerente herda e é FuncionarioAutenticavel
+public class Gerente extends FuncionarioAutenticavel {
 
 	// Metodo Bonificacao para gerente
 	// Usa-se o <@Override> e <Super>, só se o método tiver na clase genérica/mãe 
