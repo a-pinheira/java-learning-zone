@@ -1,7 +1,9 @@
 package com.ladyjava.view;
 
+import com.ladyjava.model.Cliente;
 import com.ladyjava.model.Diretores;
 import com.ladyjava.model.Funcionario;
+import com.ladyjava.model.Gerente;
 
 public class TesteFuncionario {
 	public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class TesteFuncionario {
 		func1.setCpf("22200112300");
 		func1.setSalario(7800.00);
 		
+		Cliente cli = new Cliente();
 		
 		System.out.println("Sua bonificação: " + func1.getCpf());
 		System.out.println("Nome da(o) funcionaa(o): " + func1.getNome());
@@ -30,6 +33,9 @@ public class TesteFuncionario {
 		System.out.println("Digite seu nome: " + mony.setNome());
 		System.out.println("Digite seu salario: " + mony.setSalario(salario));
 		*/
+		
+		
+		
 		
 
 	}
