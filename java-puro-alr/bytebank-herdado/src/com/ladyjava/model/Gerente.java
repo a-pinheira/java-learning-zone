@@ -9,7 +9,7 @@ import com.ladyjava.controller.Autenticavel;
 public class Gerente extends Funcionario implements Autenticavel{
 
 	private String login = "gerente";
-	private int senha = 1100;
+	private int senha = 1100 ;
 	// Metodo Bonificacao para gerente
 	// Usa-se o <@Override> e <Super>, só se o método tiver na clase genérica/mãe 
 	public double getBonificacao() {
