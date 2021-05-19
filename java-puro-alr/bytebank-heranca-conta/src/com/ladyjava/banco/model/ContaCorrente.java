@@ -1,7 +1,9 @@
 package com.ladyjava.banco.model;
 
+import com.ladyjava.banco.controller.Tributavel;
+
 //new ContaCorrente()
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel{
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero); // o mesmo que conta(), mas por converção do java é: super()
@@ -13,7 +15,7 @@ public class ContaCorrente extends Conta {
 	// assinatura tem que ser igual nas 2 classes: Conta.java e ContaCorrente.java
 	@Override
 	public boolean saca(double valor) {
-		double valorSac = valor * 0.2;
+		double valorSac = valor + 0.2;
 		return super.saca(valorSac);
 	}
 	/*
@@ -22,10 +24,13 @@ public class ContaCorrente extends Conta {
 	 * }
 	 * 
 	 */
-
 	@Override
 	public void deposita(double valor) {
 		super.saldo += valor;
-		
+	}
+
+	@Override
+	public double getValorImposto() {
+		return super.saldo * 0.1;
 	}
 }

@@ -1,4 +1,4 @@
-package com.ladyjava.banco.view;
+ package com.ladyjava.banco.view;
 
 import com.ladyjava.banco.model.ContaCorrente;
 import com.ladyjava.banco.model.ContaPoupanca;
@@ -23,4 +23,4 @@ public class TesteContas {
 
 	}
 
-}
+}  
