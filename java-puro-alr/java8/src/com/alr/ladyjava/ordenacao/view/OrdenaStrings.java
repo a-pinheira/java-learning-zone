@@ -16,10 +16,12 @@ public class OrdenaStrings {
     	palavras.add("Java8");
     	palavras.add("Editora Casa do Código");
     	
-    	//Comparator<String> comparador = new ComparadorTamanho();
+    	Comparator<String> comparador = new ComparadorTamanho();
     	//Classes auxiliares do do Java Util, como: Collections, cheio de 
     	//métodos estáticos, como o método: sort
-    	Collections.sort(palavras);
+    	//ao adc o objeto do tipo String da API collections - comparator 
+    	//ele organizar por ordem de tam. e não mais por ordem alfabetica
+    	Collections.sort(palavras, comparador);
     	//Saem em ordem alfabética/lexográfica
     	//teste
     	System.out.println("Palavra: " + palavras);
