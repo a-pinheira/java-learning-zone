@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 import com.alr.ladyjava.ordenacao.controller.ComparadorTamanho;
 
@@ -22,10 +23,17 @@ public class OrdenaStrings {
     	//ao adc o objeto do tipo String da API collections - comparator 
     	//ele organizar por ordem de tam. e não mais por ordem alfabetica
     	//Collections.sort(palavras, comparador);
+    	//método sort na interface list
     	palavras.sort(comparador);
     	//Saem em ordem alfabética/lexográfica
     	//teste
     	System.out.println("Palavra: " + palavras);
     	
+    	//    	for (String p : palavras) {
+    	//    		System.out.println("Imprimir cada frase por linha: " + p);
+    	//			}
+    	
+    	Consumer<String> consumidor = null;
+    	palavras.forEach(consumidor);
         }
 }
