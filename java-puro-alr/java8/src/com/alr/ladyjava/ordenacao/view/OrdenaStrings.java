@@ -21,7 +21,8 @@ public class OrdenaStrings {
     	//métodos estáticos, como o método: sort
     	//ao adc o objeto do tipo String da API collections - comparator 
     	//ele organizar por ordem de tam. e não mais por ordem alfabetica
-    	Collections.sort(palavras, comparador);
+    	//Collections.sort(palavras, comparador);
+    	palavras.sort(comparador);
     	//Saem em ordem alfabética/lexográfica
     	//teste
     	System.out.println("Palavra: " + palavras);
