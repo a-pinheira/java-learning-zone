@@ -5,13 +5,14 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
 public class AssertTest {
 
-	// teste de Equals para os valores de um array
+	// teste de Equals para compartar os valores de um array
 	@Test
 	public void testAssertArrayEquals() {
 		byte[] esperado = "teste".getBytes();
@@ -32,6 +33,7 @@ public class AssertTest {
 	}
 
 	// teste assertNotNull para ver se o objeto não retorna um valor nulo
+	// para garantir que um objeto não está retornando um valor nulo
 	@Test
 	public void testAssertNotBull() {
 		assertNotNull(new Object());
@@ -48,11 +50,11 @@ public class AssertTest {
 	// determinado momento
 	@Test
 	public void testAssertNull() {
-		assertNotNull(null);
+		assertNull(null);
 
 	}
 
-	// teste assertSame verifica se o objetos são os mesmos
+	// teste assertSame verifica se os objetos são os mesmos
 	@Test
 	public void testAssertSame() {
 		Integer aNumber = Integer.valueOf(768);

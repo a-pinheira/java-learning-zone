@@ -1,4 +1,4 @@
-package com.ladyjava.teste;
+ package com.ladyjava.teste;
 
 import static org.junit.Assert.*;
 
