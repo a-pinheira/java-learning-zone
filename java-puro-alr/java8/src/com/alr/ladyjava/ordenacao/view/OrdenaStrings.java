@@ -34,6 +34,7 @@ public class OrdenaStrings {
     	//			}
     	
     	Consumer<String> consumidor = null;
+    	//foreach dentro de iterable
     	palavras.forEach(consumidor);
         }
 }
