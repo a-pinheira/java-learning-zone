@@ -10,7 +10,7 @@ public class CalculatorTest {
 	public void testSomar() {
 		Calculator calc = new Calculator();
 		//vamos testar o valor que o metodo somar retorna, no caso é o valor de INT (Inteiro)
-		int soma = calc.somar("1+3+1");
+		int soma = calc.somar("1+1+3");
 		assertEquals(5, soma);
 
 	}
