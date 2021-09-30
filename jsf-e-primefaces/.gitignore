@@ -1,6 +1,6 @@
 # Ignore the node_modules directory
-*target/**
-.settings/
+*target/
+
 
 # Ignore Logs
 logs
