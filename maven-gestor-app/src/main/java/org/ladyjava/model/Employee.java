@@ -1,5 +1,7 @@
 package org.ladyjava.model;
 
+import org.ladyjava.endpoint.EntryPoint;
+
 public class Employee extends Person {
 
 

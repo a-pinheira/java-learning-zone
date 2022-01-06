@@ -1,7 +1,6 @@
 package org.ladyjava.endpoint;
 
 import org.ladyjava.model.Employee;
-import org.ladyjava.model.person;
 
 public class EntryPoint {
     private String mode;
@@ -15,10 +14,10 @@ public class EntryPoint {
     }
 
     public static void main(String[] args) {
-        EntryPoint ep = new EntryPoint( mode: "DEV" );
+        EntryPoint ep = new EntryPoint( " DEV" );
         ep.printMode();
-        Employee admin = new Employee(name: "admin", id: 0, role: "admin" );
-        System.out.println("Novo user admin criado para o EntryPoint!");
+        Employee admin = new Employee( ": admin", 0, ": admin" );
+        System.out.println("Novo user admin criado para o EntryPoint!" );
 
     }
 }

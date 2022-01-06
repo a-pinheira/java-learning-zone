@@ -1,10 +1,10 @@
 package org.ladyjava.model;
 
-public class person {
+public class Person {
     private String nome;
     private long id;
 
-    public person(String nome, long id) {
+    public Person(String nome, long id) {
         this.nome = nome;
         this.id = id;
     }
