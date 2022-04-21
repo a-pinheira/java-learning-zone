@@ -1,6 +1,6 @@
 package com.ladyjava.teste;
 
-import static org.hamcrest.CoreMatchers.is;
+
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
@@ -15,7 +15,7 @@ public class ExceptionTest {
 	// Teste de expected com IndexOutOfBoundsException
 	// simulamos true, para qnd é esperado que dê a exceção
 
-	@Test(expected = IndexOutOfBoundsException.class)
+/*	@Test(expected = IndexOutOfBoundsException.class)
 	public void empty() {
 	// array list vazio e pega o primeiro objeto que não retorná nada
 		//new ArrayList<Object>().get(0);
@@ -25,7 +25,9 @@ public class ExceptionTest {
 		// lista.add("Simone");
 		lista.get(0);
 	}
+	*/
 
+	@SuppressWarnings("deprecation")
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 
@@ -39,6 +41,8 @@ public class ExceptionTest {
 		list.get(0);
 	}
 
+	//	Example Try Catch Idiom 
+	//	@SuppressWarnings("deprecation")
 	@Test
 	public void testExceptionMessage() {
 		try {
@@ -49,4 +53,8 @@ public class ExceptionTest {
 		}
 	}
 
+	private Object is(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
