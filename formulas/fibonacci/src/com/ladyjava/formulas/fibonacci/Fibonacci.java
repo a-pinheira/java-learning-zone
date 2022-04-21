@@ -1,4 +1,4 @@
-package com.ladyjava.formulas;
+package com.ladyjava.formulas.fibonacci;
 
 public class Fibonacci {
 
