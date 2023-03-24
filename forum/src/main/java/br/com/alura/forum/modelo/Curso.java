@@ -13,10 +13,15 @@ public class Curso {
 	private String nome;
 	private String categoria;
 	
+	/*
+	 * -- carrega os dados em memória, mas como usaremos o H2, não precisaremos 
+	 * -- mais do construtor
+	
 	public Curso(String nome, String categoria) {
 		this.nome = nome;
 		this.categoria = categoria;
 	}
+	*/
 
 	@Override
 	public int hashCode() {
