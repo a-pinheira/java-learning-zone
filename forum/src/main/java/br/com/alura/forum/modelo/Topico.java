@@ -32,14 +32,24 @@ public class Topico {
 	private List<Resposta> respostas = new ArrayList<>();
 
 	/*
-	 * -- carrega os dados em memória, mas como usaremos o H2, não precisaremos 
-	 * -- mais do construtor
-	 * public Topico(String titulo, String mensagem, Curso curso) {
-	 * 		this.titulo = * titulo; 
-	 * 		this.mensagem = mensagem; 
-	 * 		this.curso = curso; 
-	 * z}
+	 * -- carrega os dados em memória, mas como usaremos o H2, não precisaremos --
+	 * mais do construtor public Topico(String titulo, String mensagem, Curso curso)
+	 * { this.titulo = * titulo; this.mensagem = mensagem; this.curso = curso; z}
 	 */
+
+	/*
+	 * Neste momento precisa de um construtor default e outro especifico para setar
+	 * os atributos do DTO Form (TopicoFormDto.java
+	 */
+	public Topico() {
+	
+	}
+	
+	public Topico(String titulo, String mensagem, Curso curso) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
+	}
 
 	@Override
 	public int hashCode() {
@@ -48,6 +58,7 @@ public class Topico {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {

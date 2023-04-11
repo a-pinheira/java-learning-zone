@@ -8,13 +8,16 @@ import javax.management.loading.PrivateClassLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.alura.forum.controller.dto.TopicoDto;
+import br.com.alura.forum.controller.form.TopicoFormDto;
 import br.com.alura.forum.modelo.Curso;
 import br.com.alura.forum.modelo.Topico;
+import br.com.alura.forum.repository.CursoRepository;
 import br.com.alura.forum.repository.TopicosRepository;
 
 @RestController
@@ -23,11 +26,15 @@ public class TopicosController {
 	
 	/*
 	 * Para fazer injeção usa-se p @Autowired
+	 * Injeção de dependencia
 	 */
 	@Autowired
 	private TopicosRepository topicoRepositoy;
+
+	@Autowired
+	private CursoRepository cursoRepositoy;
 	
-	@GetMapping("/topicos")
+	@GetMapping
 	public List<TopicoDto> lista(String nomeCurso) {
 		//System.out.println("Nome do Curso: " + nomeCurso);
 		/*
@@ -49,8 +56,10 @@ public class TopicosController {
 			return TopicoDto.converter(topicos);
 		}
 	}
-	@PostMapping("/topicos")
-	private void Cadastrar() {
+	@PostMapping
+	private void Cadastrar(@RequestBody TopicoFormDto form) {
+		Topico topico = form.converter();
+		topicoRepositoy.save(topico);
 		
 
 	}
