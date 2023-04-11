@@ -6,7 +6,10 @@ import java.util.List;
 import javax.management.loading.PrivateClassLoader;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.alura.forum.controller.dto.TopicoDto;
@@ -23,7 +26,8 @@ public class TopicosController {
 	@Autowired
 	private TopicosRepository topicoRepositoy;
 	
-	@RequestMapping("/topicos")
+	@RequestMapping(value = "/topicos", method = RequestMethod.GET)
+	@GetMapping("/topicos")
 	public List<TopicoDto> lista(String nomeCurso) {
 		//System.out.println("Nome do Curso: " + nomeCurso);
 		/*
@@ -45,7 +49,8 @@ public class TopicosController {
 			return TopicoDto.converter(topicos);
 		}
 	}
-	@RequestMapping("/topicos")
+	@RequestMapping(value = "/topicos", method = RequestMethod.POST)
+	@PostMapping("/topicos")
 	private void Cadastrar() {
 		
 
