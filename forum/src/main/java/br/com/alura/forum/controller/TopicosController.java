@@ -25,11 +25,12 @@ public class TopicosController {
 	
 	@RequestMapping("/topicos")
 	public List<TopicoDto> lista(String nomeCurso) {
-		System.out.println("Nome do Curso" + nomeCurso);
+		//System.out.println("Nome do Curso: " + nomeCurso);
 		/*
 		 * findAll(): metodo que faz uma consulta carregando todos os dados
 		 * / registros do BD
 		 */
+		if (nomeCurso == null) {
 		List<Topico> topicos = topicoRepositoy.findAll();
 		/*
 		 * apaga essa linha:
@@ -38,9 +39,16 @@ public class TopicosController {
 		 * e apaga tmb a linha do array asList
 		 * return TopicoDto.converter(Arrays.asList(topico, topico, topico));
 		 */
-		
-		
 		return TopicoDto.converter(topicos);
+		} else {
+			List<Topico> topicos = topicoRepositoy.findByCursoNome(nomeCurso);
+			return TopicoDto.converter(topicos);
+		}
+	}
+	@RequestMapping("/topicos")
+	private void Cadastrar() {
+		
+
 	}
 
 }
