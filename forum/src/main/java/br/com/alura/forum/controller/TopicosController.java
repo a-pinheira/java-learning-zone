@@ -27,7 +27,7 @@ public class TopicosController {
 	private TopicosRepository topicoRepositoy;
 	
 	@RequestMapping(value = "/topicos", method = RequestMethod.GET)
-	@GetMapping("/topicos")
+	/*@GetMapping("/topicos") */
 	public List<TopicoDto> lista(String nomeCurso) {
 		//System.out.println("Nome do Curso: " + nomeCurso);
 		/*
@@ -50,7 +50,7 @@ public class TopicosController {
 		}
 	}
 	@RequestMapping(value = "/topicos", method = RequestMethod.POST)
-	@PostMapping("/topicos")
+	/*@PostMapping("/topicos")*/
 	private void Cadastrar() {
 		
 
