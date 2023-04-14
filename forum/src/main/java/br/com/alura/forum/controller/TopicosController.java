@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import javax.management.loading.PrivateClassLoader;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -61,7 +62,7 @@ public class TopicosController {
 		}
 	}
 	@PostMapping
-	private ResponseEntity<TopicoDto> Cadastrar(@RequestBody TopicoFormDto form, UriComponentsBuilder uriBuilder) {
+	private ResponseEntity<TopicoDto> Cadastrar(@RequestBody @Valid TopicoFormDto form, UriComponentsBuilder uriBuilder) {
 		Topico topico = form.converter(cursoRepositoy);
 		topicoRepositoy.save(topico);
 		URI uri = uriBuilder.path("/topicos/{id}").buildAndExpand(topico.getId()).toUri();
